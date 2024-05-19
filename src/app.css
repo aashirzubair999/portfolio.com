@@ -1,0 +1,57 @@
+
+    input, textarea {
+        background-color: transparent !important;
+        max-width: 2000px;
+        max-height: 200px;
+        color: #ffff !important;
+
+    }
+        
+    ::-webkit-scrollbar {
+        width: 10px
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 20px;
+        background-color: white;
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #2C2C6C;
+        border-radius: 20px;
+    }
+
+
+    body {
+        background-color: rgba(0,0,128,1);
+        overflow-x: hidden
+    }
+
+    h2, h5, h4 {
+        color: white
+    }
+
+    .typed-out {
+        overflow: hidden;
+        border-right: .215em solid blue;
+        white-space: nowrap;
+        animation: typing 3s forwards, blink-caret 0.75s step-end infinite;
+        font-size: 1.4rem;
+    }
+
+    .card {
+        background-color: #2C2C6C !important;
+        border-radius: 20px
+    }
+
+    .card {
+        background-color: #2C2C6C;
+        border-radius: 20px;
+        transition: background-color 0.3s ease; /* Add transition effect */
+    }
+
+        .card:hover {
+            background-color: transparent !important; /* Make sure the hover effect takes precedence */
+            border-color: #2C2C6C !important;
+        }

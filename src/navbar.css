@@ -1,0 +1,76 @@
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-brand {
+    position: relative;
+    font-weight: 500;
+    font-size: 45px;
+    color: red;
+}
+
+    .navbar-brand i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        color: #f32020;
+        transition: opacity 1s ease;
+    }
+
+
+.navbar-nav .nav-link {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: green !important;
+    }
+
+    .navbar-nav .nav-link::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        background-color: blue !important;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+.navbar-nav .dropdown-menu {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Styles for the transparent navbar when at the top */
+.navbar-transparent {
+    background-color: rgba(0, 0, 255, 0.3) !important
+}
+
+/* Styles for the scrolled state */
+.scrolled .navbar,
+.scrolled .navbar-brand,
+.scrolled .navbar-nav .nav-link {
+    color: black !important;
+}
+
+.scrolled.navbar-transparent {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.sticky-top {
+    position: fixed;
+    left: 0;
+    right: 0;
+}
